@@ -1,0 +1,41 @@
+/* Bootstrap theming starting template */
+/* Change this colors by how do you want to customize bootstrap colors */
+/* Tüm tema aşağıdaki renkler baz alınarak yazılmıştır */
+/* Aşağıdaki renkleri admin panelden düzenletip Laravel Elixir ile sass compile yaparak tema renklerini kolayca değiştirtebilirsiniz */
+/* Daha fazlası için: https://laravel.com/docs/5.3/elixir#sass */
+$primary: #2d1152 !default;
+$secondary: #ffab5c !default;
+$success: #05c46b !default;
+$info: #522583 !default;
+$warning: #FBB13C !default;
+$danger: #ff5a51 !default;
+$light: #dfdfdf !default;
+$dark: #12130F !default;
+$white: #fff !default;
+$theme-colors: ("primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark);
+/* Change this fonts by how do you want to customize bootstrap fonts */
+$font-family-sans-serif: 'Inter',
+'Roboto',
+sans-serif !default;
+$font-family-monospace: 'Roboto',
+'Inter',
+sans-serif !default;
+
+
+
+$container-max-widths: (sm: 540px,
+    md: 680px,
+    lg: 840px,
+    xl: 1006px,
+    xxl: 1006px) !default;
+
+/* If you want to customize Bootstrap deeply, visit this doc: https://getbootstrap.com/docs/5.0/customize/overview/ */
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
