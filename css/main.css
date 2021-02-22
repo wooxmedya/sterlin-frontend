@@ -481,7 +481,10 @@ span.coming-soon {
 }
 
 #main {
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 11rem;
+    padding-left: 0;
+    padding-right: 0;
     background-color: var(--bs-light);
     z-index: 1 !important;
 }
@@ -959,6 +962,32 @@ tr.decrease>td:nth-last-child(1) {
         padding-right: 0;
         width: 113.8px;
     }
+
+    #main {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #main>.container {
+        padding-left: 0;
+        padding-right: 0;
+        transition: .4s all ease-in-out;
+    }
+
+    footer>.container {
+        padding-left: 0;
+        padding-right: 0;
+        transition: .4s all ease-in-out;
+    }
+
+}
+
+#main>.container {
+    transition: .2s all ease-in-out;
+}
+
+footer>.container {
+    transition: .2s all ease-in-out;
 }
 
 @media (max-width: 492px) {
@@ -1136,6 +1165,199 @@ span.inline-bg {
     left: 0 !important;
     bottom: 0;
 }
+
+body {
+    background-color: var(--bs-light) !important;
+}
+
+#footer-box {
+    background-color: var(--bs-primary);
+    height: auto;
+    padding: .6rem 1rem;
+}
+
+#footer-nav ul {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+#footer-nav li {
+    margin-bottom: .5rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#footer-nav ul:nth-child(1) {
+    margin-right: 2rem;
+}
+
+#footer-nav ul:nth-child(1)::after {
+    content: '';
+    height: 100px;
+    width: 3px;
+    color: white;
+    border: none;
+    background-color: currentColor;
+    position: absolute;
+    right: -1rem;
+    top: 5px;
+    margin-left: .6rem;
+    border-radius: 30px;
+    opacity: .05;
+}
+
+.app-download {
+    width: 152px;
+    height: 45px;
+    display: inline-block;
+}
+
+.app-download.play {
+    background-image: url(../media/static/playstore.png);
+}
+
+.app-download.app {
+    background-image: url(../media/static/appstore.png);
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+    .social-icons {
+        margin-top: .5rem !important;
+        margin-bottom: .5rem !important;
+    }
+}
+
+
+.social-icon {
+    background-color: #60368d;
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    font-size: 1.2rem !important;
+    text-align: center;
+    padding-top: .2rem;
+    transition: .5s all ease;
+    cursor: pointer;
+}
+
+.social-icon>a {
+    color: var(--bs-white) !important;
+}
+
+.social-icon:hover {
+    background-color: var(--bs-white) !important;
+    transition: .5s all ease;
+}
+
+.social-icon:hover a {
+    color: var(--bs-primary) !important;
+    transition: .5s all ease;
+}
+
+.disclaimer {
+    background-color: #34165a;
+    padding: .75rem .5rem 1rem .5rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    font-size: 14px;
+    color: var(--bs-light);
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    #conditions li {
+        display: inline-block;
+        margin-left: .2rem;
+        margin-right: .2rem;
+        font-size: .85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #conditions li {
+        display: block !important;
+        margin-top: .5rem !important;
+        margin-bottom: .5rem !important;
+        font-size: 1rem;
+    }
+
+    .download-wrapper {
+
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        margin-bottom: 1.5rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .app-download:nth-child(1) {
+        margin-right: .5rem;
+    }
+
+    .app-download:nth-child(2) {
+        margin-left: .5rem;
+    }
+
+}
+
+
+#conditions {
+    text-align: center;
+}
+
+#conditions ul {
+    list-style: none;
+    font-size: 1.15rem;
+    padding-left: 0;
+}
+
+#conditions li {
+    display: inline-block;
+    margin-left: .675rem;
+    margin-right: .675rem;
+}
+
+#conditions a {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+
+
+#conditions li:nth-child(1) {
+    margin-left: 0;
+}
+
+#conditions li:nth-last-child(1) {
+    margin-right: 0;
+}
+
+hr.divider-mobile {
+    opacity: 0.05 !important;
+    height: 3px !important;
+    margin-bottom: 1rem !important;
+}
+
+@media (max-width: 385px) {
+    .app-download:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .app-download:nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+
+
+
 
 
 
