@@ -22,6 +22,7 @@
     <!--After Bootstrap 5, you dont need to use Jquery but its necessary to other plugins-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
+
 </head>
 
 <body>
@@ -64,9 +65,8 @@
                         <div class="vert-divider"></div>
                     </li>
                     <li class="nav-item">
-                        <a href="/login.html">
-                            <button class="btn btn-secondary login">Giriş / Kayıt</button>
-                        </a>
+                        <button class="btn btn-secondary login" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Giriş / Kayıt</button>
                     </li>
 
 
@@ -79,17 +79,78 @@
             <div class="container">
                 <ul class="navbar-nav mb-lg-0">
                     <!--Soldaki boşluğu silmek için ilk itemin a.nav-link e ps-0 koymak yeterli-->
-                    <li class="nav-item active ">
+                    <li class="nav-item with-hover active">
                         <a href="#" class="nav-link ps-0">Döviz</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Döviz Kurları</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <!--Hover menu itemlerin isimlerinin 20 karakteri geçmemesi gerekir-->
+                                    <a href="#">
+                                        <li>Sterlin Kuru</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Dolar Kuru</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Euro Kuru</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Kanada Kuru</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Altın</a>
+
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item with-hover">
                         <a href="#" class="nav-link">Borsa</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Hisse Senetleri</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Türk Hisseleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Endeksler</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Türk Endeksleri</li>
+                                    </a>
+
+                                </ul>
+                            </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item with-hover">
                         <a href="#" class="nav-link">Kripto Paralar</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Kripto Paralar</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Bitcoin</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Etherium</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Ripple</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Litecoin</li>
+                                    </a>
+                                </ul>
+                            </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Pariteler</a>
@@ -97,14 +158,61 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Emtialar</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item with-hover">
                         <a href="#" class="nav-link">Haber</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Tüm Haberler</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Döviz Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Kripto Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Altın Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Borsa Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Emtia Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Gündem Haberleri</li>
+                                    </a>
+
+                                </ul>
+                            </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item with-hover">
                         <a href="#" class="nav-link">Araçlar</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Döviz Çeviri</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Madencilik Hesaplama</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Kredi Hesaplama</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Ekonomik Takvim</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Gelir Hesaplama <span class="text-secondary text-uppercase">beta</span></li>
+                                    </a>
+                                </ul>
+                            </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Analiz<span class="text-secondary">PRO</span></a>
@@ -202,7 +310,7 @@
                         </a>
                     </li>
                     <li class="nav-item currency-pair-wrapper">
-                        <a href="#" class="nav-link">
+                        <a href="javascript:void(0)" class="nav-link">
                             <div class="row">
                                 <div class="col-4">
                                     <ul class="currency-pair d-flex">
@@ -218,10 +326,122 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link " style="padding: .8rem 1rem;">
+                        <a id="add-currency" href="javascript:void(0)" class="nav-link " style="padding: .8rem 1rem;">
                             <i class="fal fa-plus text-secondary"></i>
                         </a>
+
                     </li>
+                    <div id="currency-add" class="card">
+                        <div class="card-header">
+                            <span>Sık Kullanılan bir değer ekle.</span>
+                            <button id="closeMenu" class="btn btn-close"></button>
+                        </div>
+                        <div class="card-body">
+                            <input class="form-control" type="search" name="currency"
+                                placeholder="Eklemek için bir birim yaz...">
+                            <div class="currency-box">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
+                                        <tr class="increase">
+                                            <td>
+                                                <img src="media/static/currency-icons/051-united-kingdom.svg" alt="">
+                                            </td>
+                                            <td>GBP/TRY<br><span>İngiliz Sterlini</span></td>
+                                            <td class="price"><span>11,2211</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    0,0029 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="increase">
+                                            <td>
+                                                <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                    alt="">
+                                            </td>
+                                            <td>USD/TRY<br><span>Amerikan Doları</span></td>
+                                            <td class="price update-increase"><span>7,5671</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    0,0029 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="decrease">
+                                            <td>
+                                                <img src="media/static/currency-icons/036-european-union.svg" alt="">
+                                            </td>
+                                            <td>EUR/TRY<br><span>Euro</span></td>
+                                            <td class="price"><span>8,6513</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    -0,0137 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="increase">
+                                            <td>
+                                                <img src="media/static/currency-icons/103-canada.svg" alt="">
+                                            </td>
+                                            <td>CAD/TRY<br><span>Kanada Doları</span></td>
+                                            <td class="price"><span>11,2211</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    0,0529 <br>
+                                                    <p>%2,73</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="decrease">
+                                            <td>
+                                                <img src="media/static/currency-icons/080-russia.svg" alt="">
+                                            </td>
+                                            <td>RUB/TRY<br><span>Rus Rublesi</span></td>
+                                            <td class="price"><span>0,0953</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    -0,0029 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="btn btn-secondary mt-1">EKLE</button>
+                        </div>
+                    </div>
 
 
 
@@ -330,7 +550,7 @@
                         <div class="col-12">
                             <div id="ad-section-1" class="banner-ad">
                                 <a href="javascript:window.location.replace(`http://${location.hostname}`);">
-                                    <img src="/media/bannerfull.png" alt=""></a>
+                                    <img src="media/bannerfull.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -1121,7 +1341,7 @@
                         <div class="col-sm-8">
                             <div id="ad-section-2" class="banner-ad">
                                 <a href="javascript:window.location.replace(`http://${location.hostname}`);">
-                                    <img src="/media/banner90px.png" alt="">
+                                    <img src="media/banner90px.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -1703,7 +1923,7 @@
                         <div class="col-lg-5 col-sm-12">
                             <div id="ad-section-3" class="banner-ad">
                                 <a href="javascript:window.location.replace(`http://${location.hostname}`);">
-                                    <img src="/media/banner280.png" alt="">
+                                    <img src="media/banner280.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -1712,7 +1932,7 @@
                         <div class="col-sm-8">
                             <div id="ad-section-2" class="banner-ad">
                                 <a href="javascript:window.location.replace(`http://${location.hostname}`);">
-                                    <img src="/media/banner90px.png" alt="">
+                                    <img src="media/banner90px.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -1915,8 +2135,12 @@
                         </div>
                         <div class="col-lg-6 col-xs-12 text-center text-lg-end">
                             <div class="download-wrapper">
-                                <div class="app-download play"></div>
-                                <div class="app-download app"></div>
+                                <a href="#">
+                                    <div class="app-download play"></div>
+                                </a>
+                                <a href="#">
+                                    <div class="app-download app"></div>
+                                </a>
                             </div>
                             <div class="social-icons">
                                 <div class="social-icon">
@@ -1965,7 +2189,170 @@
             </div>
         </footer>
     </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="row">
+                    <div class="col-lg-6 bg-primary">
+                        <h4>Bedava <span>Üyelik</span> Oluştur<br>ve;</h4>
+                        <ul>
+                            <li>
+                                <div class="icon-wrap">
+                                    <div class="feature-icon icon-graph"></div>
+                                </div>
+                                <span>Anlık veriler</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrap">
+                                    <div class="feature-icon icon-briefcase"></div>
+                                </div>
+                                <span>Kişisel Portföy Oluşturma</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrap">
+                                    <div class="feature-icon icon-oscar"></div>
+                                </div>
+                                <span>AnalizPRO Akademesi</span>
+                            </li>
 
+                        </ul>
+                    </div>
+                    <div id="login-buttons" class="col-lg-6">
+
+                        <div class="row">
+                            <button class="btn btn-brand btn-facebook mb-2">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook ile Üye Ol</span>
+                            </button>
+                            <button class="btn btn-brand btn-google">
+                                <i class="fab fa-google"></i>
+                                <span>Google ile Üye Ol</span>
+                            </button>
+                            <div class="col-12 text-center">
+                                <p>VEYA</p>
+                            </div>
+                            <button class="page-switchers register btn btn-brand btn-secondary mb-2 text-dark fw-bold"
+                                data-target="register" data-current="login-buttons">
+                                <span>ÜYELİK OLUŞTUR</span>
+                            </button>
+                            <button class="page-switchers login-button btn btn-brand btn-primary" data-target="login"
+                                data-current="login-buttons">
+                                <span>GİRİŞ YAP</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="register" class="col-lg-6 d-none">
+                        <button class="page-switchers btn btn-back" data-target="login-buttons" data-current="register">
+                            <i class="far fa-long-arrow-alt-left"></i>
+                        </button>
+                        <div class="row">
+                            <form action="/register" method="POST" class="w-100">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="text" class="form-control" placeholder="Adınız"
+                                                aria-label="Adınız">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-12">
+                                        <div class="input-group pe-0">
+                                            <input type="text" class="form-control" placeholder="Soyadınız"
+                                                aria-label="Soyadınız">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="email" class="form-control" placeholder="Mail adresiniz"
+                                                aria-label="Mail adresiniz">
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="password" class="form-control" placeholder="Şifre"
+                                                aria-label="Şifre">
+                                            <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 mb-4">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="tel" class="form-control" placeholder="Telefon Numarası"
+                                                aria-label="Telefon Numarası" pattern="(05|5)[0-9][0-9][1-9]([0-9]){6}"
+                                                title="Geçerli bir telefon numarası giriniz. Örn: `0555 555 55 55` gibi">
+                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <p class="termsofservice">Kayıt olarak <a href="">Şartlar ve Koşullar</a> ve <a
+                                                href="">Gizlilik
+                                                Politikasını</a> ilkelerimizi kabul etmiş olursunuz.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-secondary w-100 mb-2">E-posta ile Kayıt
+                                            Ol</button>
+                                        <p class="logintext">Hesabınız var mı? <a class="page-switchers"
+                                                href="javascript:void(0)" data-target="login"
+                                                data-current="register">Giriş Yapın</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="login" class="col-lg-6 d-none">
+                        <button class="page-switchers btn btn-back" data-target="login-buttons" data-current="login">
+                            <i class="far fa-long-arrow-alt-left"></i>
+                        </button>
+                        <div class="row">
+                            <form action="/login" method="POST" class="w-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="email" class="form-control" placeholder="Mail adresiniz"
+                                                aria-label="Mail adresiniz">
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="password" class="form-control" placeholder="Şifre"
+                                                aria-label="Şifre">
+                                            <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-secondary w-100 mb-2">Giriş Yap</button>
+                                        <p class="logintext">Hesabınız yok mu? <a class="page-switchers"
+                                                href="javascript:void(0)" data-target="register"
+                                                data-current="login">Hesap Oluşturun</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bildirimlerin küçük ekranlarda nasıl görüneceği görüşülecek-->
+    <div class="notif notif-info"></div>
+    <div class="notif notif-price-alarm"></div>
 
 
 

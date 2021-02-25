@@ -82,4 +82,58 @@ function searchAnimation() {
     });
 }
 
-window.onload = toggleCurrencies(), activeNavItems(), toggleMenu(), searchAnimation();
+function dynamicPageSwitch() {
+    let switchers = document.querySelectorAll('.page-switchers');
+    for (let i = 0; i < switchers.length; i++) {
+        switchers[i].addEventListener('click', () => {
+            let current = switchers[i].dataset.current;
+            let target = switchers[i].dataset.target;
+            let currentElement = document.getElementById(current);
+            let targetElement = document.getElementById(target);
+            currentElement.classList.add('fade');
+            setTimeout(() => {
+                currentElement.classList.add('d-none');
+                targetElement.classList.remove('d-none');
+                targetElement.classList.add('d-block', 'fade', 'show');
+            }, 100);
+
+        })
+    }
+};
+
+function hoverMenus() {
+    let withHover = document.querySelectorAll('.nav-item.with-hover');
+    for (let i = 0; i < withHover.length; i++) {
+        withHover[i].addEventListener('mouseover', () => {
+            withHover[i].classList.add('hovering');
+            let toShow = document.querySelector('.nav-item.with-hover.hovering>.hover-menu');
+            toShow.classList.add('show');
+        });
+        withHover[i].addEventListener('mouseout', () => {
+            withHover[i].classList.remove('hovering');
+            let toHide = document.querySelector('.nav-item.with-hover>.hover-menu.show');
+            toHide.classList.remove('show');
+        });
+
+    }
+}
+
+function currencyMenu() {
+    let triggerButton = document.querySelector('#add-currency');
+    let currencyMenu = document.querySelector('#currency-add');
+    let closeButton = document.querySelector('#closeMenu');
+    let currencyItems = document.querySelectorAll('.currency-box tr');
+    triggerButton.addEventListener('click', () => {
+        currencyMenu.classList.toggle('d-block');
+    });
+    closeButton.addEventListener('click', () => {
+        currencyMenu.classList.toggle('d-block');
+    });
+    for (let i = 0; i < currencyItems.length; i++) {
+        currencyItems[i].addEventListener('click', () => {
+            currencyItems[i].classList.toggle('active');
+        })
+    }
+}
+
+window.onload = toggleCurrencies(), activeNavItems(), toggleMenu(), searchAnimation(), dynamicPageSwitch(), hoverMenus(), currencyMenu();
