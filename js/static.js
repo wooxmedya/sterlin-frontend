@@ -49,12 +49,27 @@ function activeNavItems() {
 function toggleMenu() {
     let menuIcon = document.querySelector('#menu-wrapper');
     let menu = document.querySelector('#mobile-menu');
+    let menuOutside = document.querySelector('#menu-outside');
     let rest = document.querySelector('#stack');
-    menuIcon.addEventListener('click', () => {
+    let isMenuActive = false;
+
+    function toggleMenuState() {
         menuIcon.classList.toggle('active');
         menu.classList.toggle('show');
-        stack.classList.toggle('hide');
+        rest.classList.toggle('hide');
+        menuOutside.classList.toggle('clickable');
+        isMenuActive = !isMenuActive;
+        if (debug) console.log(`Menu aktif mi?: ${isMenuActive}`);
+    }
+    menuIcon.addEventListener('click', () => {
+        toggleMenuState()
+    });
+    menuOutside.addEventListener('click', () => {
+        if (debug) console.log('Dışarı tıklandı')
+        toggleMenuState()
     })
+
+
 }
 
 function searchAnimation() {

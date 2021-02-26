@@ -1807,3 +1807,24 @@ hr.divider-mobile {
 .currency-box table {
     vertical-align: middle;
 }
+
+#footer-nav li>a {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+#menu-outside {
+    width: 19% !important;
+    min-width: 19% !important;
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+    top: 62px;
+    z-index: 999999999;
+    pointer-events: none;
+}
+
+#menu-outside.clickable {
+    pointer-events: all;
+}
