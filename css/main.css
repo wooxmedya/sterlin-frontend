@@ -1876,9 +1876,9 @@ hr.divider-mobile {
     color: var(--bs-secondary);
 }
 
-.currency-info {
+/* .currency-info {
     background-color: #f4f5f8;
-}
+} */
 
 .col-section.left.details tr>td:nth-child(2) {
     padding-right: 0 !important;
@@ -2401,7 +2401,7 @@ p {
     color: #a6a9b7;
 }
 
-.currency-price {
+.converter-currency-price {
     font-size: 20px !important;
     font-weight: 700;
     margin-top: 9px;
@@ -2448,4 +2448,32 @@ p {
 
 .table-details thead tr>th {
     padding-bottom: 0;
+}
+
+.currency-info>table {
+    background-color: #f4f5f8;
+}
+
+@media (max-width: 1200px) {
+    .tradingview-widget-container {
+        display: none;
+    }
+
+    #loginModal .bg-primary {
+        height: unset;
+        min-height: unset;
+    }
+
+    .currency-info {
+        padding-left: 0 !important;
+    }
+
+    .price-table.right .price {
+        font-size: .9rem !important;
+    }
+
+    .price-table tr>td>img {
+        width: 35px !important;
+        height: 35px !important;
+    }
 }
