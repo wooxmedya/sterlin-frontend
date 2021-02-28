@@ -2476,6 +2476,11 @@ p {
         width: 35px !important;
         height: 35px !important;
     }
+
+    .btn-increase,
+    .btn-decrease {
+        width: 45%;
+    }
 }
 
 ul.nav-tabs {
