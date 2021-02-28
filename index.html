@@ -20,7 +20,7 @@
         rel="stylesheet">
     <!--Your Custom Scripts and Stylesheets-->
     <!--After Bootstrap 5, you dont need to use Jquery but its necessary to other plugins-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 
 
 </head>
@@ -48,8 +48,8 @@
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item currency-switch d-flex">
                         <!--Can be used multiple currencies-->
-                        <a class="nav-link active" href="#" data-currency="TRY">TRY</a>
-                        <a class="nav-link" href="#" data-currency="USD">USD</a>
+                        <a class="nav-link active" href="javascript:void(0)" data-currency="TRY">TRY</a>
+                        <a class="nav-link" href="javascript:void(0)" data-currency="USD">USD</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
@@ -465,17 +465,17 @@
                 </a>
                 <ul class="navbar-nav search-animate ">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="javascript:void(0)" class="nav-link">
                             <i class="fas fa-bell"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="javascript:void(0)" class="nav-link">
                             <i class="fal fa-briefcase"></i>
                         </a>
                     </li>
                     <li id="search-toggler" class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="javascript:void(0)" class="nav-link">
                             <i class="fal fa-search"></i>
                         </a>
                     </li>
@@ -505,8 +505,8 @@
                         </li>
                         <li class="nav-item currency-switch d-flex ms-auto">
                             <!--Can be used multiple currencies-->
-                            <a class="nav-link active" href="#" data-currency="TRY">TRY</a>
-                            <a class="nav-link" href="#" data-currency="USD">USD</a>
+                            <a class="nav-link active" href="javascript:void(0)" data-currency="TRY">TRY</a>
+                            <a class="nav-link" href="javascript:void(0)" data-currency="USD">USD</a>
                         </li>
                     </ul>
                     <ul class="mobile-cats">
@@ -545,6 +545,7 @@
         <div id="menu-outside"></div>
 
     </div>
+    <!--end of Header-->
 
     <div id="stack">
         <section id="main">
@@ -558,6 +559,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--end of Header with ad-->
                     <div class="row">
                         <div class="col-section left col-lg-7 col-sm-12">
                             <h2 class="section-heading">Piyasa <span>Durumu</span></h2>
@@ -596,7 +598,7 @@
                                 <div class="tab-pane fade show active" id="tab-currencies" role="tabpanel"
                                     aria-labelledby="home-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table left table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -700,7 +702,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="tab-gold" role="tabpanel" aria-labelledby="profile-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table left table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="decrease">
@@ -807,7 +809,7 @@
                                 <div class="tab-pane fade" id="tab-indexes" role="tabpanel"
                                     aria-labelledby="contact-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table left table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -913,7 +915,7 @@
                                 <div class="tab-pane fade" id="tab-commodity" role="tabpanel"
                                     aria-labelledby="contact-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table left table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1019,7 +1021,7 @@
                                 <div class="tab-pane fade" id="tab-parities" role="tabpanel"
                                     aria-labelledby="contact-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table left table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1151,7 +1153,7 @@
                                 <div class="tab-pane fade show active" id="tab-stocks" role="tabpanel"
                                     aria-labelledby="home-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table right table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1213,7 +1215,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="tab-rising" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table right table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1275,7 +1277,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="tab-falling" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table right table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="decrease">
@@ -1393,7 +1395,7 @@
                                 <div class="tab-pane fade show active" id="tab-popular" role="tabpanel"
                                     aria-labelledby="home-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table left table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1498,7 +1500,7 @@
                                 <div class="tab-pane fade" id="tab-rising" role="tabpanel"
                                     aria-labelledby="profile-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="price-table left table table-borderless">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1604,7 +1606,7 @@
                                 <div class="tab-pane fade" id="tab-falling" role="tabpanel"
                                     aria-labelledby="contact-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="table table-borderless price-table left">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1711,7 +1713,7 @@
                                 <div class="tab-pane fade" id="tab-last24h" role="tabpanel"
                                     aria-labelledby="contact-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="table table-borderless price-table left">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -1817,7 +1819,7 @@
                                 <div class="tab-pane fade" id="tab-last7d" role="tabpanel"
                                     aria-labelledby="contact-tab">
                                     <div class="table-responsive">
-                                        <table class="table table-borderless">
+                                        <table class="table table-borderless price-table left">
                                             <tbody>
                                                 <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
                                                 <tr class="increase">
@@ -2115,6 +2117,7 @@
                 </div>
             </div>
         </section>
+        <!--Footer başı-->
         <footer>
             <div class="container text-white">
                 <div id="footer-box">
@@ -2194,6 +2197,7 @@
             </div>
         </footer>
     </div>
+    <!--Sayfa yüklenirken önemli elementlerin görünür kalması için görünür olarak gelmeyen elementler sona alındı-->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -2364,14 +2368,15 @@
 
 
 
-    <script src="js/static.js"></script>
+    <script src="js/static.js" async></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
     </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js">
     </script>-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" async>
     </script>
 
 </body>
 
 </html>
+<!--Footer sonu-->

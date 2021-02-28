@@ -14,7 +14,7 @@ function toggleCurrencies() {
             if (debug) console.log(`Aktif Döviz: ${activeCurrenncy}`)
         })
     }
-}
+} //Static
 
 function emptyLink() {
     if (debug) {
@@ -31,7 +31,7 @@ function emptyLink() {
             })
         }
     }
-}
+} //Boş link bırakmamak için isteğe bağlı fonksiyon
 
 function activeNavItems() {
     let navItems = document.querySelectorAll('#navbar-nav .nav-item');
@@ -44,7 +44,7 @@ function activeNavItems() {
             navItems[i].classList.toggle('active');
         })
     }
-}
+} //Static
 
 function toggleMenu() {
     let menuIcon = document.querySelector('#menu-wrapper');
@@ -68,9 +68,7 @@ function toggleMenu() {
         if (debug) console.log('Dışarı tıklandı')
         toggleMenuState()
     })
-
-
-}
+} //Static
 
 function searchAnimation() {
     let searchToggler = document.querySelector('#search-toggler');
@@ -95,7 +93,7 @@ function searchAnimation() {
             toAnimateReverse[i].classList.toggle('animate');
         }
     });
-}
+} //Static
 
 function dynamicPageSwitch() {
     let switchers = document.querySelectorAll('.page-switchers');
@@ -114,7 +112,7 @@ function dynamicPageSwitch() {
 
         })
     }
-};
+}; //Static
 
 function hoverMenus() {
     let withHover = document.querySelectorAll('.nav-item.with-hover');
@@ -131,7 +129,7 @@ function hoverMenus() {
         });
 
     }
-}
+} //Static
 
 function currencyMenu() {
     let triggerButton = document.querySelector('#add-currency');
@@ -149,6 +147,6 @@ function currencyMenu() {
             currencyItems[i].classList.toggle('active');
         })
     }
-}
-
+} //Static
+//Sayfa yüklenirken javascriptin hızı kesmemesi için DOM yüklendikten sonra fonksiyonları çalıştırıyoruz
 window.onload = toggleCurrencies(), activeNavItems(), toggleMenu(), searchAnimation(), dynamicPageSwitch(), hoverMenus(), currencyMenu();
