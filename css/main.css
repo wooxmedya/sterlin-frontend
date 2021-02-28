@@ -2479,7 +2479,7 @@ p {
 
     .btn-increase,
     .btn-decrease {
-        width: 45%;
+        width: 45% !important;
     }
 }
 
