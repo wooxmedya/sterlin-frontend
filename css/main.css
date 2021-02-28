@@ -2477,3 +2477,11 @@ p {
         height: 35px !important;
     }
 }
+
+ul.nav-tabs {
+    overflow-y: hidden;
+}
+
+ul.nav-tabs::-webkit-scrollbar {
+    display: none;
+}
