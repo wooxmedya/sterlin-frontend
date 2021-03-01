@@ -3009,6 +3009,7 @@ textarea {
 
     .profiles-name .icon-verified {
         right: 43px;
+        top: 5px !important;
     }
 
     #notifications {
@@ -3018,10 +3019,125 @@ textarea {
     .profile-tabs-text {
         left: 22px !important;
     }
+
+    .col-12.col-md-7.sss {
+        padding-left: 0 !important;
+    }
 }
 
 @media (max-width: 1200px) {
     .profiles-name .icon-verified {
         top: 52px;
     }
+}
+
+#add-card .form-label {
+    font-size: 16px !important;
+}
+
+.alert-text {
+    font-size: 10px;
+    color: rgba(64, 82, 97, 0.6);
+}
+
+.alert-text i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.card-placeholder {
+    height: 252px;
+    margin-bottom: 46px;
+    margin-top: 46px;
+}
+
+.btn-primary.add-new {
+    font-size: 13.17px !important;
+    background-color: #522583 !important;
+    width: 157px !important;
+    border-radius: 5px !important;
+}
+
+.my-card {
+    position: relative;
+}
+
+.cc-bg {
+    width: 300px;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'Kredit';
+    src: url('../media/fonts/kredit.ttf') format('embedded-opentype'),
+        /* Internet Explorer */
+        url('../media/fonts/kredit.ttf') format('woff2'),
+        /* Super Modern Browsers */
+        url('../media/fonts/kredit.ttf') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../media/fonts/kredit.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../media/fonts/kredit.ttf') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Kredit Front';
+    src: url('../media/fonts/kredit\ front.ttf') format('embedded-opentype'),
+        /* Internet Explorer */
+        url('../media/fonts/kredit\ front.ttf') format('woff2'),
+        /* Super Modern Browsers */
+        url('../media/fonts/kredit\ front.ttf') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../media/fonts/kredit\ front.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../media/fonts/kredit\ front.ttf') format('svg');
+    /* Legacy iOS */
+}
+
+.my-card {
+    font-family: 'Kredit Front', sans-serif !important;
+    user-select: none;
+    width: 300px !important;
+    cursor: pointer;
+}
+
+.card-number,
+.card-exp-date,
+.cardholder {
+    position: absolute;
+    color: var(--bs-light);
+}
+
+.card-number {
+    bottom: 59px;
+    left: 28px;
+    font-size: 28px;
+}
+
+.cardholder {
+    bottom: 10px;
+    left: 30px;
+    font-size: 18px;
+}
+
+.card-exp-date {
+    bottom: 38px;
+    left: 104px;
+}
+
+.card-logo {
+    position: absolute;
+}
+
+.card-logo.visa {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+}
+
+.card-logo.mc {
+    bottom: 10px;
+    right: 10px;
+    width: 30px !important;
 }
