@@ -556,309 +556,320 @@
                             padding: 16px 12px 250px 16px !important;
                         }
                     </style>
-                    <div class="profile-info">
+                    <div class="profile-info profile-settings">
                         <div class="row">
                             <div class="col-12 col-sm-2">
                                 <div class="profile-pic">
                                     <img src="https://via.placeholder.com/150/000000/FFFFFF/?text=Sterlin.net" alt="">
+
+
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6">
-                                <!--Yeni üye: <h1>Hakan Yılmaz <span class="badge bg-success">Yeni Üye</span></h1>-->
-                                <!--Editor: <h1>Hakan Yılmaz <span class="badge bg-gray-grad">Editor</span></h1>-->
-                                <!--Yatırımcı: <h1>Hakan Yılmaz <span class="badge bg-orange-grad">Yatırımcı</span></h1>-->
-                                <!--Trader: <h1>Hakan Yılmaz <span class="badge bg-purple-grad">Trader</span></h1>-->
-                                <!--PRO: <h1>Hakan Yılmaz <span class="badge bg-primary-grad">PRO</span></h1>-->
-                                <!--Broker: <h1>Hakan Yılmaz <span class="badge bg-cyan-grad">Broker</span></h1>-->
-                                <!--Borsa: <h1>Hakan Yılmaz <span class="badge bg-green-grad">Borsa</span></h1>-->
-                                <div class="profiles-name mt-sm-3 mb-0">
-                                    <h1>Hakan Yılmaz <span class="badge bg-success">Yeni Üye</span></h1>
+                            <div class="col-12 col-sm-3">
+                                <div class="profiles-name mt-sm-2 mb-0">
+                                    <h1>Hakan Yılmaz</h1>
+                                    <div class="icon-verified"></div>
                                 </div>
-                                <div class="profile-meta mb-2">
-                                    <span class="me-2">Üyelik Tarihi 06/02/2021</span>
-                                    <span><i class="fas fa-clock me-1"></i>Son Giriş 17 dakika önce</span>
+                                <div class="profile-link mb-2">
+                                    <span>www.sterlin.net/Hakan123</span>
                                 </div>
-                                <div class="profile-social">
-                                    <span class="me-2">Seviye : 3</span>
-                                    <span class="me-2">Başarılı Tahmin : %13 (BTC)</span>
-                                    <span>Tebrik Puanı : 453</span>
-                                </div>
+                                <button class="btn btn-secondary avatar">Avatar Yükle / Değiştir</button>
                             </div>
-                            <div class="col-12 text-center text-sm-end col-sm-4">
-                                <div class="profile-buttons">
-                                    <button class="btn bg-secondary-grad">Takip Et</button>
-                                    <button class="btn btn-light">Mesaj</button>
-                                    <button class="btn bg-purple">Tebrik Et</button>
-                                </div>
+                            <div class="col-12 text-center text-sm-start col-sm-4">
+                                <div class="alert alert-outline-primary text-center">Yeni bir avatar yükleyin. Büyük
+                                    boyuttaki
+                                    görseller otomatik olarak boyutlanır. <br>Maksimum görsel boyutu 1 MB</div>
                             </div>
                         </div>
-                        <div id="trgr-menu" class="profile-options"
-                            onclick="document.getElementById('profile-options-menu').classList.toggle('menu-show');">
-                            <button class="btn">
-                                <i class="fal fa-ellipsis-v"></i>
-                            </button>
-                            <div id="profile-options-menu">
-                                <ul>
-                                    <a href="#">
-                                        <li><i class="fas fa-low-vision me-1"></i>Kullanıcıyı Engelle</li>
-                                    </a>
-                                    <a href="#">
-                                        <li><i class="far fa-times me-2"></i>Şikayet Et</li>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
+
 
 
                     </div>
-                    <ul class="nav nav-tabs profile-tabs mt-2" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs profile-tabs with-text mt-2" id="myTab" role="tablist">
+                        <h2 class="profile-tabs-text">Ayarlar</h2>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="posts-tab" data-bs-toggle="tab" data-bs-target="#posts"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">Paylaşımlar</button>
+                            <button class="nav-link active" id="profile-edit-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-edit" type="button" role="tab" aria-controls="profile-edit"
+                                aria-selected="true">Profili
+                                Düzenle</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#followers"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">Takipçi
-                                (22)</button>
+                            <button class="nav-link" id="notifications-tab" data-bs-toggle="tab"
+                                data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
+                                aria-selected="false">Bildirimler</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="following-tab" data-bs-toggle="tab" data-bs-target="#following"
-                                type="button" role="tab" aria-controls="following" aria-selected="false">Takip Edilenler
-                                (0)</button>
+                            <button class="nav-link" id="blocked-tab" data-bs-toggle="tab" data-bs-target="#blocked"
+                                type="button" role="tab" aria-controls="blocked" aria-selected="false">Engelli
+                                Kullanıcılar</button>
                         </li>
                     </ul>
-                    <div class="col-12 col-sm-7">
+                    <div class="col-12 col-md-7">
                         <div class="tab-content" id="profile-contents">
-                            <div class="tab-pane fade show active" id="posts" role="tabpanel"
+                            <div class="tab-pane fade show active" id="profile-edit" role="tabpanel"
                                 aria-labelledby="posts-tab">
-                                <div class="comment-box">
-                                    <div class="row">
-                                        <div class="col-2 col-sm-1">
-                                            <div class="comment-profile-pic"></div>
+                                <div class="row mt-5">
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row">
+                                            <label for="basic-url" class="form-label col-4">Kullanıcı
+                                                Adı</label>
+                                            <label for="basic-url" class="form-label right col-8">Kullanıcı
+                                                Adı
+                                                değiştirilemez.</label>
                                         </div>
-                                        <div class="col-6 ps-sm-3 ps-0">
-                                            <p class="profile-name">Murat Kılıç</p>
-                                            <p class="comment-timestamp">2 dakika önce</p>
+                                        <input type="text" class="form-control form-second" id="basic-url"
+                                            aria-describedby="basic-addon3" disabled value="Hakan Yılmaz"
+                                            placeholder="Kullanıcı adı">
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4" style="position: relative !important;">
+                                        <div class="label-wrapper row">
+                                            <label for="basic-url" class="form-label col-4">Profil
+                                                Bağlantısı</label>
+                                            <label for="basic-url" class="form-label right col-8">Telefon
+                                                doğrulaması gerekir.</label>
                                         </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button class="btn btn-like p-0 text-secondary">
-                                                <i class="fas fa-thumbs-up"></i>
-                                                <span class="text-dark">13</span>
-                                            </button>
-                                            <button class="btn btn-dislike p-0">
-                                                <i class="far fa-thumbs-down"></i>
-                                                <span>2</span>
-                                            </button>
+                                        <input type="text" class="form-control form-second" id="basic-url"
+                                            aria-describedby="basic-addon3" value="Hakan123" placeholder="Kullanıcı adı"
+                                            valid="true">
+                                        <div class="icon-verified"></div>
+                                    </div>
+                                    <div class="col-12 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row">
+                                            <label for="basic-url" class="form-label col-4">Kısa
+                                                Biyografi</label>
+                                            <label for="basic-url" class="form-label right col-8">150
+                                                karakter.</label>
+                                        </div>
+                                        <textarea type="text" class="form-control form-second" id="basic-url"
+                                            aria-describedby="basic-addon3"
+                                            placeholder="Hakkınızda kısa bilgi..."></textarea>
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row">
+                                            <label for="basic-url" class="form-label col-4">Şifre</label>
+                                            <label for="basic-url" class="form-label right col-8 change">
+                                                <button
+                                                    onclick="document.getElementById('password').removeAttribute('disabled');document.getElementById('password-again').removeAttribute('disabled')"
+                                                    class="btn btn-secondary btn-change">Değiştir</button></label>
+                                        </div>
+                                        <input type="value" class="form-control form-second" id="password"
+                                            aria-describedby="basic-addon3" value="*********" disabled>
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row mt-1">
+                                            <label for="basic-url" class="form-label col-4">Şifre
+                                                Tekrar</label>
+                                            <label for="basic-url" class="form-label right col-8">Şifreler
+                                                uyuşmuyor.</label>
+                                        </div>
+                                        <input type="value" class="form-control form-second" id="password-again"
+                                            aria-describedby="basic-addon3" value="*********" disabled>
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row">
+                                            <label for="basic-url" class="form-label col-4">E-posta
+                                                Adresi</label>
+                                            <label for="basic-url" class="form-label right col-8 change">
+                                                <button
+                                                    onclick="document.getElementById('email').removeAttribute('disabled');"
+                                                    class="btn btn-secondary btn-change">Değiştir</button></label>
+                                        </div>
+                                        <input type="value" class="form-control form-second" id="email"
+                                            aria-describedby="basic-addon3" value="demomail@mail.com" disabled>
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row mt-1">
+                                            <label for="basic-url" class="form-label col-12">E-posta
+                                                Onayla</label>
+
+                                        </div>
+                                        <input type="value" class="form-control form-second" id="password-again"
+                                            aria-describedby="basic-addon3" value="">
+                                    </div>
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row mt-1">
+                                            <label for="basic-url" class="form-label col-6">Telefon
+                                                Numarası</label>
+                                            <label for="basic-url" class="form-label right col-6 change">
+                                                <button class="btn btn-secondary btn-change">Değiştir</button></label>
+
+                                        </div>
+                                        <div class="input-group group-second mb-sm-3 mb-4">
+                                            <span class="input-group-text" id="basic-addon3">+90</span>
+                                            <input type="text" class="form-control form-second" id="basic-url"
+                                                aria-describedby="basic-addon3" value="555 555 55 55">
                                         </div>
                                     </div>
+                                    <div class="col-12 col-sm-6 mb-sm-2 mb-4">
+                                        <div class="label-wrapper row mt-1">
 
-                                    <p class="comment-content p-0 mb-0">beyler boşuna ağlamayın btcyi boostlayacak
-                                        kimse
-                                        yok şu anda herkes dogeyi pumpluyor boşuna yorulmayın burda biraz
-                                        dogede para kasın yarın 1 dolar olacak</p>
-                                    <button class="btn comment-reply p-0">Cevap Yaz</button>
+                                            <label for="basic-url" class="form-label col-12 col-sm-6 change">
+                                                <button class="btn btn-secondary btn-change">Kod İste</button></label>
 
-                                </div>
-                                <div class="comment-box">
-                                    <div class="row">
-                                        <div class="col-2 col-sm-1">
-                                            <div class="comment-profile-pic"></div>
                                         </div>
-                                        <div class="col-6 ps-sm-3 ps-0">
-                                            <p class="profile-name">Hakan yılmaz</p>
-                                            <p class="comment-timestamp">4 dakika önce</p>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button class="btn btn-like p-0 text-secondary">
-                                                <i class="fas fa-thumbs-up"></i>
-                                                <span class="text-dark">6</span>
-                                            </button>
-                                            <button class="btn btn-dislike p-0">
-                                                <i class="far fa-thumbs-down"></i>
-                                                <span>0</span>
-                                            </button>
+                                        <input type="text" class="form-control form-second d-inline" style="width: 50%;"
+                                            id="basic-url" aria-describedby="basic-addon3" value=""
+                                            placeholder="Kodu yaz...">
+                                        <button class="btn btn-primary btn-verify" style="width: 48%;">Doğrula</button>
+                                    </div>
+                                    <h3 class="text-social mt-5">Sosyal Hesaplarım (İsteğe bağlı)</h3>
+                                    <div class="col-12 col-sm-6 ">
+
+                                        <div class="input-group group-second mb-3">
+                                            <span class="input-group-text" id="basic-addon3"><i
+                                                    style="color: #3b5998; font-size: 20px;"
+                                                    class="fab fa-facebook-square"></i></span>
+                                            <input type="text" class="form-control form-second" id="basic-url"
+                                                aria-describedby="basic-addon3" value=""
+                                                placeholder="Facebook Username">
                                         </div>
                                     </div>
-
-                                    <p class="comment-content p-0 mb-0">eninde sonunda yükselecek arkadaşlar</p>
-                                    <button class="btn comment-reply p-0">Cevap Yaz</button>
-
-                                </div>
-                                <div class="comment-box as-a-reply">
-                                    <div class="row">
-                                        <div class="col-2 col-sm-1">
-                                            <div class="comment-profile-pic"></div>
-                                        </div>
-                                        <div class="col-6 ps-3">
-                                            <p class="profile-name">Levent Crypto</p>
-                                            <p class="comment-timestamp">4 dakika önce</p>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button class="btn btn-like p-0 text-secondary">
-                                                <i class="fas fa-thumbs-up"></i>
-                                                <span class="text-dark">6</span>
-                                            </button>
-                                            <button class="btn btn-dislike p-0">
-                                                <i class="far fa-thumbs-down"></i>
-                                                <span>0</span>
-                                            </button>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="input-group group-second mb-3">
+                                            <span class="input-group-text" id="basic-addon3"><i
+                                                    style="color: #00acee; font-size: 20px;"
+                                                    class="fab fa-twitter"></i></span>
+                                            <input type="text" class="form-control form-second" id="basic-url"
+                                                aria-describedby="basic-addon3" value="" placeholder="Twitter Username">
                                         </div>
                                     </div>
-
-                                    <p class="comment-content p-0 mb-0">Nerden biliyorsun emin misin? </p>
-                                    <button class="btn comment-reply p-0">Cevap Yaz</button>
-
-                                </div>
-                                <div class="comment-box">
-                                    <div class="row">
-                                        <div class="col-2 col-sm-1">
-                                            <div class="comment-profile-pic"></div>
-                                        </div>
-                                        <div class="col-6 ps-sm-3 ps-0">
-                                            <p class="profile-name">Ferhat Aslan</p>
-                                            <p class="comment-timestamp">7/02/2021 - 20:11</p>
-                                        </div>
-                                        <div class="col-4 col-sm-5 text-end">
-                                            <button class="btn btn-like p-0 text-secondary">
-                                                <i class="fas fa-thumbs-up"></i>
-                                                <span class="text-dark">6</span>
-                                            </button>
-                                            <button class="btn btn-dislike p-0">
-                                                <i class="far fa-thumbs-down"></i>
-                                                <span>0</span>
-                                            </button>
-                                        </div>
+                                    <div class="col-12 col-sm-4 mt-4">
+                                        <button class="btn btn-primary btn-update w-100">Güncelle</button>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <p style="font-size: 14.17px; color: rgba(23, 23, 23, 0.6) !important;">Sizin
+                                            kişisel bilgileriniz ile ilgili
+                                            güvenliğiniz hakkında ciddi önlemler
+                                            alıyoruz. <br>
+                                            Daha fazla bilgi için lütfen <strong><a href="#">gizlilik
+                                                    politikamıza</a></strong> bakın.
+                                        </p>
                                     </div>
 
-                                    <p class="comment-content p-0 mb-0">İnşallah yükselir 40 k yı dip seviye olarak
-                                        kabul ederse insanlar kurtulur en azından kimse zarara girmez. Umarım böyle
-                                        olur ALLAH herkesin yardımcısı olsun amin.</p>
-                                    <button class="btn comment-reply p-0">Cevap Yaz</button>
-
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <button class="btn btn-showmore mt-4">Daha fazla göster</button>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade pt-sm-5 pt-1" id="followers" role="tabpanel"
+                            <div class="tab-pane fade" id="notifications" role="tabpanel"
                                 aria-labelledby="followers-tab">
-                                <div class="users-list">
-                                    <ul>
-                                        <li class="mb-2">
-                                            <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
-                                                alt="" class="profile-photo me-1">
-                                            <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-secondary-grad text-white">Takip Et</button>
-                                                <button class="btn bg-light">Mesaj</button>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2">
-                                            <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
-                                                alt="" class="profile-photo me-1">
-                                            <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-secondary-grad text-white">Takip Et</button>
-                                                <button class="btn bg-light">Mesaj</button>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2">
-                                            <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
-                                                alt="" class="profile-photo me-1">
-                                            <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-secondary-grad text-white">Takip Et</button>
-                                                <button class="btn bg-light">Mesaj</button>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2">
-                                            <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
-                                                alt="" class="profile-photo me-1">
-                                            <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-danger text-white">Çıkar</button>
-                                                <button class="btn bg-light">Mesaj</button>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="row">
+                                    <div class="col-12 mt-4 mb-2">
+                                        <p class="notif-heading">E-Posta Bildirimleri</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="notif-text">Gelen kutunuza yollanmasını istediğiniz bültenleri seçin.
+                                            Herhangi bir bülteni istediğiniz zaman ekleyip çıkarabilirsiniz.</p>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <div class="form-check form-switch">
+                                            <label class="notif-subtext">
+                                                Günün Haber ve Analizleri
+                                            </label>
+                                            <input class="form-check-input " type="checkbox" id="flexSwitchCheckChecked"
+                                                checked>
+
+                                        </div>
+                                        <p class="notif-text">Sterlin.net’te yer alan günün en önemli haberleri ve
+                                            analizleriyle anlık olarak E-posta adresinize gönderilsin.
+                                            Günlük (Pazartesi - Cuma)</p>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <div class="form-check form-switch">
+                                            <label class="notif-subtext">
+                                                Kullanıcı Bildirimi
+                                            </label>
+                                            <input class="form-check-input " type="checkbox"
+                                                id="flexSwitchCheckChecked">
+
+                                        </div>
+                                        <p class="notif-text">Takip ettiğiniz kullanıcılar görüş, yorum ve cevap yazdığı
+                                            zaman gelen bildirim.
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <div class="form-check form-switch">
+                                            <label class="notif-subtext">
+                                                Alarm Bildirimi
+                                            </label>
+                                            <input class="form-check-input " type="checkbox"
+                                                id="flexSwitchCheckChecked">
+
+                                        </div>
+                                        <p class="notif-text">Kurmuş olduğunuz alarmlarınızın E-posta yoluyla tarafınıza
+                                            gönderilen bildirim.</p>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <div class="form-check form-switch">
+                                            <label class="notif-subtext">
+                                                Güncellemeler
+                                            </label>
+                                            <input class="form-check-input " type="checkbox"
+                                                id="flexSwitchCheckChecked">
+
+                                        </div>
+                                        <p class="notif-text">Yeni hizmetlere yönelik güncellemeler alın.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade pt-sm-5 pt-1" id="following" role="tabpanel"
-                                aria-labelledby="following-tab">
-                                <div class="users-list">
+                            <div class="tab-pane fade" id="blocked" role="tabpanel" aria-labelledby="notification-tab">
+                                <div class="users-list blockeds">
                                     <ul>
-                                        <li class="mb-2">
+                                        <li class="mb-4">
                                             <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
                                                 alt="" class="profile-photo me-1">
                                             <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-secondary-grad text-white">Takip Et</button>
-                                                <button class="btn bg-light">Mesaj</button>
+                                                <span>Abbie Pratt</span><br>
+                                                <span><span class="text-red">Engeli kaldırıldı</span> Geri
+                                                    engelle</span>
                                             </div>
                                         </li>
-                                        <li class="mb-2">
+                                        <li class="mb-4">
                                             <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
                                                 alt="" class="profile-photo me-1">
                                             <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-secondary-grad text-white">Takip Et</button>
-                                                <button class="btn bg-light">Mesaj</button>
+                                                <span>Abbie Pratt</span><br>
+                                                <span class="text-red">Engellendi</span>
                                             </div>
                                         </li>
-                                        <li class="mb-2">
+                                        <li class="mb-4">
                                             <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
                                                 alt="" class="profile-photo me-1">
                                             <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-secondary-grad text-white">Takip Et</button>
-                                                <button class="btn bg-light">Mesaj</button>
+                                                <span>Abbie Pratt</span><br>
+                                                <span class="text-red">Engellendi</span>
                                             </div>
                                         </li>
-                                        <li class="mb-2">
+                                        <li class="mb-4">
                                             <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
                                                 alt="" class="profile-photo me-1">
                                             <div class="profile-infos">
-                                                <span>Dennis Guzman</span><br>
-                                                <span>0 Yorum / 0 Takipçi</span>
-                                            </div>
-                                            <div class="profiles-buttons float-end">
-                                                <button class="btn bg-danger text-white">Çıkar</button>
-                                                <button class="btn bg-light">Mesaj</button>
+                                                <span>Abbie Pratt</span><br>
+                                                <span class="text-red">Engellendi</span>
                                             </div>
                                         </li>
+                                        <li class="mb-4">
+                                            <img src="https://via.placeholder.com/500/000000/ffffff?text=Profil+Resmi"
+                                                alt="" class="profile-photo me-1">
+                                            <div class="profile-infos">
+                                                <span>Abbie Pratt</span><br>
+                                                <span class="text-red">Engellendi</span>
+                                            </div>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
+
+
+
+
 
         <!--Footer başı-->
         <footer>

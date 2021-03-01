@@ -2515,6 +2515,9 @@ ul.nav-tabs::-webkit-scrollbar {
     width: 70px !important;
 }
 
+.profiles-name {
+    position: relative;
+}
 
 .profiles-name>h1 {
     font-size: 26px !important;
@@ -2659,6 +2662,7 @@ ul.nav-tabs::-webkit-scrollbar {
     background-color: rgba(248, 249, 251, 0.6);
     padding: 1.125rem 2.25rem !important;
     border: 1px solid rgba(0, 0, 0, .1) !important;
+    padding-bottom: 0 !important;
 
 }
 
@@ -2675,7 +2679,7 @@ ul.nav-tabs::-webkit-scrollbar {
 
 .profile-tabs .nav-link.active,
 .profile-tabs .nav-link:hover {
-    border-bottom: 3px solid var(--bs-secondary) !important;
+    border-bottom: 4px solid var(--bs-secondary) !important;
     transition: .1s all ease-in-out !important;
 }
 
@@ -2724,7 +2728,7 @@ ul.nav-tabs::-webkit-scrollbar {
 .profile-infos>span:nth-last-child(1) {
     font-size: 14px;
     margin-bottom: 0;
-    color: rgba(53, 56, 77, 0.4) !important;
+    color: rgba(53, 56, 77, 0.4);
 }
 
 .profiles-buttons {
@@ -2773,5 +2777,251 @@ ul.nav-tabs::-webkit-scrollbar {
 
     .users-list ul {
         padding-left: 0 !important;
+    }
+}
+
+.profile-link>span {
+    color: #405261;
+    font-size: .9rem !important;
+    font-size: 400;
+}
+
+.profile-settings .btn-secondary {
+    color: #fff !important;
+    font-size: 16px !important;
+    border-radius: 3px !important;
+    height: 38px !important;
+    width: 180px !important;
+    padding: 0 !important;
+}
+
+.profiles-name>.icon-verified {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.icon-verified {
+    background-image: url(../media/static/verified.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 21px;
+}
+
+.alert-outline-primary {
+    background-color: #f8f8fa !important;
+    border: 1px solid #7264b4 !important;
+    border-radius: 5px !important;
+    font-size: 14px;
+}
+
+.profile-tabs.with-text {
+    position: relative;
+    padding-top: 100px !important;
+}
+
+.profile-tabs-text {
+    position: absolute;
+    font-size: 28px !important;
+    top: 40px;
+    left: 55px;
+}
+
+.form-label {
+    font-size: 10px !important;
+    color: #405261 !important;
+}
+
+.form-label.right {
+    font-size: 10px !important;
+    text-align: right;
+    color: rgba(64, 82, 97, 0.6) !important;
+}
+
+.form-label.right::after {
+    content: '\f06a';
+    font-weight: 300;
+    font-family: 'Font Awesome 5 Pro';
+    color: var(--bs-secondary);
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+
+
+.form-control.form-second {
+    border-radius: 5px !important;
+    border-width: 1.5px !important;
+    font-size: 14px;
+}
+
+input:disabled {
+    user-select: none;
+}
+
+textarea {
+    resize: none !important;
+}
+
+.btn-change {
+    width: 64px !important;
+    height: 18px !important;
+    padding: 0 !important;
+    color: #fff !important;
+    border-radius: 3px !important;
+}
+
+.form-label.change::after {
+    content: '';
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+
+}
+
+.group-second {
+    border-width: 2px !important;
+}
+
+.group-second>span {
+    border-radius: 5px 0 0 5px !important;
+}
+
+.group-second>input.form-second {
+    border-right: 1px solid rgb(206, 212, 218);
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.btn-verify {
+    height: 42.19px !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    padding: 0 !important;
+    background-color: #522583 !important;
+    border: none !important;
+}
+
+.text-social {
+    font-size: 14.81px !important;
+}
+
+.text-social>span {
+    font-size: 10px;
+}
+
+.btn-update {
+    border-radius: 3px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    background-color: #522583 !important;
+    border: none !important;
+}
+
+#notifications {
+    padding-left: 56px;
+}
+
+.notif-heading {
+    font-size: 12.53px;
+    font-weight: 700;
+    color: #405261;
+}
+
+.notif-text {
+    font-size: 10.87px !important;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .7);
+
+}
+
+.notif-subtext {
+    color: #161d25;
+    font-size: 14.32px;
+    font-weight: 600;
+}
+
+.form-switch {
+    padding-left: 0 !important;
+}
+
+.form-check-input {
+    margin-left: 0 !important;
+    float: unset !important;
+}
+
+/*
+.form-check-input:checked {
+    background-color: rgb(228, 228, 230) !important;
+    background-color: -moz-radial-gradient(circle, rgba(228, 228, 230, 1) 0%, rgba(191, 192, 193, 1) 50%) !important;
+    background-color: -webkit-radial-gradient(circle, rgba(228, 228, 230, 1) 0%, rgba(191, 192, 193, 1) 50%) !important;
+    background-color: radial-gradient(circle, rgba(228, 228, 230, 1) 0%, rgba(191, 192, 193, 1) 50%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4e4e6", endColorstr="#bfc0c1", GradientType=1);
+    border-color: rgb(228, 228, 230) !important;
+}
+
+.form-switch .form-check-input:checked {
+    background-position: right center;
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23522583'/%3e%3c/svg%3e) !important;
+}*/
+
+#blocked .profile-infos>span:nth-child(1) {
+    font-weight: 600;
+}
+
+#blocked .profile-photo {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.col-12.col-sm-6 .icon-verified {
+    position: absolute;
+    top: 39px;
+    right: 21px;
+    opacity: .7;
+}
+
+.text-red {
+    color: #ed3851 !important;
+}
+
+#blocked ul>li {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05) !important;
+    padding-bottom: 59px;
+}
+
+@media (max-width: 576px) {
+    .profile-link {
+        text-align: center;
+    }
+
+    .col-12.col-sm-3 {
+        text-align: center;
+    }
+
+    button.btn.btn-secondary.avatar {
+        margin-bottom: 1rem;
+    }
+
+    .profiles-name .icon-verified {
+        right: 43px;
+    }
+
+    #notifications {
+        padding-left: unset;
+    }
+
+    .profile-tabs-text {
+        left: 22px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .profiles-name .icon-verified {
+        top: 52px;
     }
 }
