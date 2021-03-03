@@ -670,9 +670,14 @@ tr.decrease .currency-direction>i {
 
 
 
-tr.increase>td:nth-last-child(1) {
+tr.increase .currency-direction>span {
     font-weight: 700;
     color: var(--bs-success) !important;
+}
+
+tr.decrease .currency-direction>span {
+    font-weight: 700;
+    color: var(--bs-danger) !important;
 }
 
 .price-table tr>td:nth-last-child(1) {
@@ -1305,6 +1310,10 @@ body {
 
     .app-download:nth-child(2) {
         margin-left: .5rem;
+    }
+
+    .currency-name {
+        min-width: 170px;
     }
 
 }
@@ -3140,4 +3149,87 @@ textarea {
     bottom: 10px;
     right: 10px;
     width: 30px !important;
+}
+
+.searchbox-wrapper {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    background-image: url(../media/static/search.png);
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    opacity: .5;
+    top: 7px;
+    left: 7px;
+}
+
+.searchbox {
+    background-color: #f4f5f8 !important;
+    padding: 0.6rem 2.25rem !important;
+    height: 2.25rem !important;
+    color: rgba(74, 76, 104, 0.8) !important;
+    font-size: 14px !important;
+
+}
+
+.searchbox::placeholder {
+    color: rgba(74, 76, 104, 0.5) !important;
+}
+
+.currency-table tr>th {
+    color: #828899;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.currency-name {
+    font-size: 16px !important;
+    font-weight: 700;
+    color: #4a4c68;
+}
+
+.currency-name span {
+    font-size: 14px !important;
+    font-weight: 400;
+}
+
+.currency-buying {
+    color: var(--bs-info) !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
+.currency-table .currency-direction>span {
+    font-weight: 400 !important;
+}
+
+.table-image {
+    width: 50px;
+}
+
+.table-image>img {
+    width: 32px;
+    height: 32px;
+}
+
+.currency-table tbody>tr>td {
+    font-size: 18px;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    color: #171717;
+}
+
+.currency-table tr:hover {
+    background-color: #f4f5f8;
+    cursor: pointer;
+}
+
+.table> :not(:last-child)> :last-child>* {
+    border-bottom-color: rgba(0, 0, 0, .1) !important;
 }
