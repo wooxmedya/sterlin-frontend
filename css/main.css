@@ -3233,3 +3233,40 @@ textarea {
 .table> :not(:last-child)> :last-child>* {
     border-bottom-color: rgba(0, 0, 0, .1) !important;
 }
+
+.crypto-attributes {
+    color: #4a4c68;
+    font-size: 14px !important;
+}
+
+.icon-cart {
+    width: 24px;
+    height: 24px;
+    background-image: url(../media/static/cart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.table-cart {
+    width: 25px;
+    border-spacing: 0;
+}
+
+.currency-table.crypto-table .currency-name {
+    width: 135px;
+}
+
+.crypto-table tbody>tr>td {
+    color: rgba(23, 23, 23, 0.8);
+}
+
+@media (max-width: 768px) {
+    .crypto-attributes {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: .5rem;
+    }
+}
