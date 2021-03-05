@@ -3270,3 +3270,28 @@ textarea {
         margin-bottom: .5rem;
     }
 }
+
+.add-currency .searchbox {
+    background-color: white !important;
+    padding: 0.2rem .5rem !important;
+    height: 26px !important;
+}
+
+.add-currency .search-icon {
+    left: unset;
+    right: 7px !important;
+    top: 4px;
+    opacity: .3;
+    width: 18px;
+    height: 18px;
+}
+
+.table-dismiss {
+    opacity: .5;
+    transition: .3s all ease-in-out;
+}
+
+.table-dismiss:hover {
+    opacity: 1;
+    transition: .3s all ease-in-out;
+}
