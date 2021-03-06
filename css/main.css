@@ -3032,6 +3032,10 @@ textarea {
     .col-12.col-md-7.sss {
         padding-left: 0 !important;
     }
+
+    .pp-wrapper {
+        width: 50px;
+    }
 }
 
 @media (max-width: 1200px) {
