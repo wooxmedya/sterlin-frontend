@@ -3370,3 +3370,139 @@ h2.blog-content-heading {
 #blog-list .blog-title {
     color: #2f2f33 !important;
 }
+
+#coin-selector {
+    background-color: transparent;
+    color: #4a4c68;
+    font-size: 14.59px;
+    font-weight: 700;
+    border: none;
+    width: 300px;
+    text-align: left;
+}
+
+#coin-selector span {
+    font-size: 13.61px;
+    font-weight: 400;
+    color: #a6a9b7;
+    margin-left: 10px;
+}
+
+#coin-selector img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+#coin-selector:focus {
+    box-shadow: none;
+}
+
+#coin-selector i {
+    float: right;
+}
+
+.dropdown-toggle::after {
+    all: unset !important;
+}
+
+#tab-unit .dropdown-menu {
+    width: 300px !important;
+}
+
+.calculator-desc {
+    margin-top: 1rem;
+    font-size: 13.61px;
+    font-weight: 400;
+    color: #a6a9b7;
+}
+
+.input-group.with-select {
+    background-color: #f4f5f8;
+    border-width: 0px !important;
+}
+
+.input-group.with-select>* {
+    border: none;
+    background-color: #f4f5f8;
+}
+
+.input-group.with-select select {
+    width: 27%;
+    height: 45px;
+}
+
+.input-group.with-select input {
+    width: 73%;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #171717;
+}
+
+#tab-unit label {
+    font-size: 13.61px;
+    font-weight: 400;
+    margin-bottom: .3 rem;
+}
+
+.btn-calculate {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    width: 94px;
+    height: 24px;
+    padding: 0 !important;
+    color: white !important;
+    border-radius: 3px !important;
+}
+
+.table-result>thead>tr {
+    border-bottom: none !important;
+}
+
+.table-result>tbody>tr {
+    border-top: none !important;
+    font-weight: 700 !important;
+    font-size: 21.39px;
+    color: #2c2e3e;
+}
+
+.table-result thead>tr>th {
+    padding-bottom: 0px !important;
+    font-weight: 400 !important;
+    font-size: 16px;
+    color: #2c2e3e;
+    vertical-align: middle;
+}
+
+.table-result tbody>tr>td {
+    padding-top: 0px !important;
+}
+
+.icons-svg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.icon-clock {
+    background-image: url(../media/static/clock-circular-outline.svg);
+    width: 15px;
+    height: 15px;
+
+}
+
+.icon-mining {
+    background-image: url(../media/static/mining.svg);
+    width: 17px;
+    height: 15px;
+}
+
+.icon-electricity {
+    background-image: url(../media/static/Elektrik.svg);
+    width: 15px;
+    height: 15px;
+}
