@@ -3506,3 +3506,73 @@ h2.blog-content-heading {
     width: 15px;
     height: 15px;
 }
+
+.btn-create-currency {
+    padding: 0 !important;
+    width: 94px !important;
+    height: 18px !important;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    color: #333333 !important;
+    background-color: #f2f3f5 !important;
+}
+
+.icon-create-currency {
+    background-image: url(../media/static/create-currency.svg);
+    width: 13px !important;
+    height: 13px !important;
+}
+
+.converter-wrapper img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.converter-wrapper .currency-name {
+    display: inline-block;
+    font-size: 14.59px !important;
+    color: #4a4c68 !important;
+}
+
+.converter-wrapper .currency-name span {
+    font-size: 13, 61px !important;
+    color: #a6a9b7 !important;
+}
+
+.converter-wrapper .converter-select>i {
+    position: absolute;
+    left: 8px;
+    top: 15px;
+}
+
+.converter-wrapper .dropdown-menu {
+    width: 100%;
+    text-align: right !important;
+}
+
+.converter-price {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: auto;
+    float: right;
+}
+
+.converter-select {
+    width: 100%;
+    text-align: right !important;
+    background-color: #f4f5f8 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.converter-wrapper input {
+    width: 100%;
+    border: none !important;
+}
+
+.converter-wrapper {
+    padding: 6px 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}

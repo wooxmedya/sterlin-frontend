@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sterlin, Döviz, Altın, Borsa, Kripto Para ve Anlık Piyasa Verileri</title>
+    <meta name="description"
+        content="Sterlin kuru, Güncel döviz kurları, Altın fiyatları, Dolar yorum, Canlı borsa, Kripto para fiyatları, Güncel haber ve analizler sterlin.net">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <!--Bootstrap 5.0.0 Beta-1 -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!--FontAwesome 5 Pro -->
+    <link rel="stylesheet" href="vendor/font-awesome-5/css/all.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto&display=swap&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--Your Custom Scripts and Stylesheets-->
+    <!--After Bootstrap 5, you dont need to use Jquery but its necessary to other plugins-->
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+
+
+</head>
+
+<body>
+    <div id="nav-desktop">
+        <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+
+                <a class="navbar-brand" href="javascript:window.location.replace(`http://${location.hostname}`);">
+                    <span>LOGO.</span>
+                </a>
+                <!--if logo is an image -->
+                <!--
+                        <a class="navbar-brand" href="#">
+                            <img src="/path/to/logo" alt="" width="30" height="24">
+                        </a>
+                    -->
+                <form class="d-flex ms-auto searchbar">
+                    <button class="btn" type="submit">
+                        <i class="fal fa-search"></i>
+                    </button>
+                    <input class="form-control" type="search" placeholder="Aramak için bir şeyler yazın...">
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item currency-switch d-flex">
+                        <!--Can be used multiple currencies-->
+                        <a class="nav-link active" href="javascript:void(0)" data-currency="TRY">TRY</a>
+                        <a class="nav-link" href="javascript:void(0)" data-currency="USD">USD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fal fa-briefcase"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="vert-divider"></div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-secondary login" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Giriş / Kayıt</button>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </nav>
+        <nav id="navbar-nav" class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <ul class="navbar-nav mb-lg-0">
+                    <!--Soldaki boşluğu silmek için ilk itemin a.nav-link e ps-0 koymak yeterli-->
+                    <li class="nav-item with-hover active">
+                        <a href="#" class="nav-link ps-0">Döviz</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Döviz Kurları</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <!--Hover menu itemlerin isimlerinin 20 karakteri geçmemesi gerekir-->
+                                    <a href="#">
+                                        <li>Sterlin Kuru</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Dolar Kuru</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Euro Kuru</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Kanada Kuru</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Altın</a>
+
+                    </li>
+                    <li class="nav-item with-hover">
+                        <a href="#" class="nav-link">Borsa</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Hisse Senetleri</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Türk Hisseleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Endeksler</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Türk Endeksleri</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="nav-item with-hover">
+                        <a href="#" class="nav-link">Kripto Paralar</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Kripto Paralar</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Bitcoin</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Etherium</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Ripple</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Litecoin</li>
+                                    </a>
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pariteler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Emtialar</a>
+                    </li>
+                    <li class="nav-item with-hover">
+                        <a href="#" class="nav-link">Haber</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Tüm Haberler</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Döviz Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Kripto Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Altın Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Borsa Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Emtia Haberleri</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Gündem Haberleri</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item with-hover">
+                        <a href="#" class="nav-link">Araçlar</a>
+                        <div class="hover-menu">
+                            <div class="menu-head">
+                                <span>Döviz Çeviri</span>
+                            </div>
+                            <div class="menu-body">
+                                <ul>
+                                    <a href="#">
+                                        <li>Madencilik Hesaplama</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Kredi Hesaplama</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Ekonomik Takvim</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Gelir Hesaplama <span class="text-secondary text-uppercase">beta</span></li>
+                                    </a>
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Analiz<span class="text-secondary">PRO</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Akademi</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </nav>
+        <nav id="parities" class="navbar navbar-expand-lg navbar-dark bg-info">
+            <div class="container">
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item currency-pair-wrapper">
+                        <a href="#" class="nav-link">
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="currency-pair d-flex">
+                                        <li>USD</li>
+                                        <li>TRY</li>
+                                    </ul>
+                                    <span class="currency-percent decrease">1,43</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="currency-price">7,906</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item currency-pair-wrapper">
+                        <a href="#" class="nav-link">
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="currency-pair d-flex">
+                                        <li>EUR</li>
+                                        <li>TRY</li>
+                                    </ul>
+                                    <span class="currency-percent increase">1,43</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="currency-price">8,906</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item currency-pair-wrapper">
+                        <a href="#" class="nav-link">
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="currency-pair d-flex">
+                                        <li>GBP</li>
+                                        <li>TRY</li>
+                                    </ul>
+                                    <span class="currency-percent decrease">1,43</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="currency-price">9,906</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item currency-pair-wrapper">
+                        <a href="#" class="nav-link">
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="currency-pair d-flex">
+                                        <li>XAU</li>
+                                        <li>USD</li>
+                                    </ul>
+                                    <span class="currency-percent increase">1,11</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="currency-price">1859,3</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item currency-pair-wrapper">
+                        <a href="#" class="nav-link">
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="currency-pair d-flex">
+                                        <li>BTC</li>
+                                        <li>USD</li>
+                                    </ul>
+                                    <span class="currency-percent increase">1,11</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="currency-price">33,876</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item currency-pair-wrapper">
+                        <a href="javascript:void(0)" class="nav-link">
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="currency-pair d-flex">
+                                        <li>BTC</li>
+                                        <li>USD</li>
+                                    </ul>
+                                    <span class="currency-percent increase">1,11</span>
+                                </div>
+                                <div class="col-4">
+                                    <span class="currency-price">33,876</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="add-currency" href="javascript:void(0)" class="nav-link " style="padding: .8rem 1rem;">
+                            <i class="fal fa-plus text-secondary"></i>
+                        </a>
+
+                    </li>
+                    <div id="currency-add" class="card">
+                        <div class="card-header">
+                            <span>Sık Kullanılan bir değer ekle.</span>
+                            <button id="closeMenu" class="btn btn-close"></button>
+                        </div>
+                        <div class="card-body">
+                            <input class="form-control" type="search" name="currency"
+                                placeholder="Eklemek için bir birim yaz...">
+                            <div class="currency-box">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
+                                        <tr class="increase">
+                                            <td>
+                                                <img src="media/static/currency-icons/051-united-kingdom.svg" alt="">
+                                            </td>
+                                            <td>GBP/TRY<br><span>İngiliz Sterlini</span></td>
+                                            <td class="price"><span>11,2211</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    0,0029 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="increase">
+                                            <td>
+                                                <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                    alt="">
+                                            </td>
+                                            <td>USD/TRY<br><span>Amerikan Doları</span></td>
+                                            <td class="price update-increase"><span>7,5671</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    0,0029 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="decrease">
+                                            <td>
+                                                <img src="media/static/currency-icons/036-european-union.svg" alt="">
+                                            </td>
+                                            <td>EUR/TRY<br><span>Euro</span></td>
+                                            <td class="price"><span>8,6513</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    -0,0137 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="increase">
+                                            <td>
+                                                <img src="media/static/currency-icons/103-canada.svg" alt="">
+                                            </td>
+                                            <td>CAD/TRY<br><span>Kanada Doları</span></td>
+                                            <td class="price"><span>11,2211</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    0,0529 <br>
+                                                    <p>%2,73</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="decrease">
+                                            <td>
+                                                <img src="media/static/currency-icons/080-russia.svg" alt="">
+                                            </td>
+                                            <td>RUB/TRY<br><span>Rus Rublesi</span></td>
+                                            <td class="price"><span>0,0953</span></td>
+                                            <td>
+                                                <div class="currency-direction">
+                                                    <i class="fas fa-arrow-up"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    -0,0029 <br>
+                                                    <p>%0,03</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="btn btn-secondary mt-1">EKLE</button>
+                        </div>
+                    </div>
+
+
+
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <div id="nav-mobile">
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div id="menu-wrapper">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <a class="navbar-brand me-auto search-animate"
+                    href="javascript:window.location.replace(`http://${location.hostname}`);">
+                    <span>LOGO.</span>
+                </a>
+                <ul class="navbar-nav search-animate ">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            <i class="fal fa-briefcase"></i>
+                        </a>
+                    </li>
+                    <li id="search-toggler" class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            <i class="fal fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto searchbar search-animate-reverse">
+                    <button class="btn" type="submit">
+                        <i class="fal fa-search"></i>
+                    </button>
+                    <input class="form-control" type="search" placeholder="Aramak için bir şeyler yazın...">
+                </form>
+                <button id="close-button" class="btn search-animate-reverse"><i class="fal fa-times text-white"></i>
+                </button>
+
+            </div>
+        </nav>
+        <div id="mobile-menu">
+
+            <div class="top-grad"></div>
+            <div class="preference">
+                <div class="row">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)">
+                                <button class="btn btn-secondary login" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Giriş Yap / Kayıt Ol</button>
+                            </a>
+                        </li>
+                        <li class="nav-item currency-switch d-flex ms-auto">
+                            <!--Can be used multiple currencies-->
+                            <a class="nav-link active" href="javascript:void(0)" data-currency="TRY">TRY</a>
+                            <a class="nav-link" href="javascript:void(0)" data-currency="USD">USD</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-cats">
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+                        <li>
+                            <a href="#">Döviz</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="menu-outside"></div>
+
+    </div>
+    <!--end of Header-->
+
+
+    <div id="stack">
+        <section id="main">
+            <div class="container">
+                <div id="box">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="ad-section-1" class="banner-ad mb-3">
+                                <a href="javascript:window.location.replace(`http://${location.hostname}`);">
+                                    <img src="media/bannerfull.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <ul class="breadcrumb">
+                                <li><a href="#">Sterlin.net</a></li>
+                                <li><a href="#">Döviz Kurları</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-section left col-lg-7 col-sm-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-8">
+                                    <h2 class="section-heading">Döviz <span>Çeviri</span>
+                                    </h2>
+                                    <p class="section-timestamp" style="font-size: 10px;">GERÇEK ZAMANLI 23:09</p>
+                                    <hr style="margin-bottom: .75rem !important;">
+                                </div>
+                                <div class="col-12 col-sm-4 text-end">
+                                    <button class="btn btn-create-currency ms-auto">
+                                        <div class="icons-svg icon-create-currency"></div>
+                                        <span>Döviz Oluştur</span>
+                                    </button>
+                                </div>
+                                <div class="col-12">
+
+
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="curreny-converter-tab"
+                                                data-bs-toggle="tab" data-bs-target="#tab-curreny-converter"
+                                                type="button" role="tab" aria-controls="tab-curreny-converter"
+                                                aria-selected="true">Döviz</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="coin-converter-tab" data-bs-toggle="tab"
+                                                data-bs-target="#tab-coin-converter" type="button" role="tab"
+                                                aria-controls="tab-coin-converter" aria-selected="false">Kripto Para
+                                                Çeviri</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="gold-converter-tab" data-bs-toggle="tab"
+                                                data-bs-target="#tab-gold-converter" type="button" role="tab"
+                                                aria-controls="tab-gold-converter" aria-selected="false">Altın
+                                                Çeviri</button>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <div class="tab-content" id="tab-contents">
+                                        <div class="tab-pane fade show active" id="tab-curreny-converter"
+                                            role="tabpanel" aria-labelledby="home-tab">
+
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/006-turkey.svg" alt="">
+                                                        <p class="currency-name ms-1">TRY<span class="ms-1">Türk
+                                                                Lirası</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="dropdown">
+                                                            <button class="btn dropdown-toggle converter-select"
+                                                                type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                1.000<i class="fal fa-chevron-down"></i>
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">2.000</a></li>
+                                                                <li><a class="dropdown-item" href="#">3.000</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#">4.000</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">USD<span class="ms-1">Amerikan
+                                                                Doları</span>
+                                                        </p>
+                                                        <h1 class="converter-price">8,5447</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="117,03" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/036-european-union.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">EUR<span class="ms-1">Euro</span>
+                                                        </p>
+                                                        <h1 class="converter-price">7,0493</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="141,182" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">USD<span class="ms-1">Amerikan
+                                                                Doları</span>
+                                                        </p>
+                                                        <h1 class="converter-price">8,5447</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="117,03" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/036-european-union.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">EUR<span class="ms-1">Euro</span>
+                                                        </p>
+                                                        <h1 class="converter-price">7,0493</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="141,182" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">USD<span class="ms-1">Amerikan
+                                                                Doları</span>
+                                                        </p>
+                                                        <h1 class="converter-price">8,5447</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="117,03" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/036-european-union.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">EUR<span class="ms-1">Euro</span>
+                                                        </p>
+                                                        <h1 class="converter-price">7,0493</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="141,182" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">USD<span class="ms-1">Amerikan
+                                                                Doları</span>
+                                                        </p>
+                                                        <h1 class="converter-price">8,5447</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="117,03" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/036-european-union.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">EUR<span class="ms-1">Euro</span>
+                                                        </p>
+                                                        <h1 class="converter-price">7,0493</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="141,182" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">USD<span class="ms-1">Amerikan
+                                                                Doları</span>
+                                                        </p>
+                                                        <h1 class="converter-price">8,5447</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="117,03" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/036-european-union.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">EUR<span class="ms-1">Euro</span>
+                                                        </p>
+                                                        <h1 class="converter-price">7,0493</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="141,182" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">USD<span class="ms-1">Amerikan
+                                                                Doları</span>
+                                                        </p>
+                                                        <h1 class="converter-price">8,5447</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="117,03" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/036-european-union.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">EUR<span class="ms-1">Euro</span>
+                                                        </p>
+                                                        <h1 class="converter-price">7,0493</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="141,182" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/070-united-states-of-america.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">USD<span class="ms-1">Amerikan
+                                                                Doları</span>
+                                                        </p>
+                                                        <h1 class="converter-price">8,5447</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="117,03" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="converter-wrapper">
+                                                <div class="row" style="align-items: baseline;">
+                                                    <div class="col-12 col-sm-6">
+                                                        <img src="media/static/currency-icons/036-european-union.svg"
+                                                            alt="">
+                                                        <p class="currency-name ms-1">EUR<span class="ms-1">Euro</span>
+                                                        </p>
+                                                        <h1 class="converter-price">7,0493</h1>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <input type="text" name="" class="form-control converter-select"
+                                                            id="" value="141,182" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-coin-converter" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-gold-converter" role="tabpanel"
+                                        aria-labelledby="contact-tab">
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-section col-sm-5 col-12">
+
+                            <h2 class="section-heading mt-3">Kripto <span>Paralar</span></h2>
+                            <p class="section-timestamp">GERÇEK ZAMANLI 23:09</p>
+                            <hr>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="stocks-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab-stocks" type="button" role="tab" aria-controls="tab-stocks"
+                                        aria-selected="true">Hisseler</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="rising-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab-rising" type="button" role="tab" aria-controls="tab-rising"
+                                        aria-selected="false">Yükselen</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="falling-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab-falling" type="button" role="tab"
+                                        aria-controls="tab-falling" aria-selected="false">Düşen</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content show active fade" id="tab-stocks">
+                                <div class="tab-pane fade show active" id="tab-stocks" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="table-responsive mt-3">
+                                        <table class="price-table with-image right table table-borderless">
+                                            <tbody>
+                                                <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/bitcoin.png" alt="">
+                                                    </td>
+                                                    <td>BTC/TRY<br><span>Bitcoin</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">273.567,221</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/etherium.png" alt="">
+                                                    </td>
+                                                    <td>ETH/TRY<br><span>Ethereum</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">11.567,221</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/ripple.png" alt="">
+                                                    </td>
+                                                    <td>XRP/TRY<br><span>Ripple</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">8,6513</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/tether.png" alt="">
+                                                    </td>
+                                                    <td>USDT/TRY<br><span>Tether</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">8,6513</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/bitcoin.png" alt="">
+                                                    </td>
+                                                    <td>DOT/TRY<br><span>Polkadot</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">11,2211</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-rising" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="table-responsive mt-3">
+                                        <table class="price-table with-image right table table-borderless">
+                                            <tbody>
+                                                <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/bitcoin.png" alt="">
+                                                    </td>
+                                                    <td>BTC/TRY<br><span>Bitcoin</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">273.567,221</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/etherium.png" alt="">
+                                                    </td>
+                                                    <td>ETH/TRY<br><span>Ethereum</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">11.567,221</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/ripple.png" alt="">
+                                                    </td>
+                                                    <td>XRP/TRY<br><span>Ripple</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">8,6513</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/tether.png" alt="">
+                                                    </td>
+                                                    <td>USDT/TRY<br><span>Tether</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">8,6513</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/bitcoin.png" alt="">
+                                                    </td>
+                                                    <td>DOT/TRY<br><span>Polkadot</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">11,2211</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-falling" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="table-responsive mt-3">
+                                        <table class="price-table with-image right table table-borderless">
+                                            <tbody>
+                                                <!--Bir paritenin yükselişi için: increase, düşüşü için: decrease yeterlidir-->
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/bitcoin.png" alt="">
+                                                    </td>
+                                                    <td>BTC/TRY<br><span>Bitcoin</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">273.567,221</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/etherium.png" alt="">
+                                                    </td>
+                                                    <td>ETH/TRY<br><span>Ethereum</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">11.567,221</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/ripple.png" alt="">
+                                                    </td>
+                                                    <td>XRP/TRY<br><span>Ripple</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">8,6513</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/tether.png" alt="">
+                                                    </td>
+                                                    <td>USDT/TRY<br><span>Tether</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">8,6513</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="increase ps-0">
+                                                    <td><img src="media/static/currency-icons/bitcoin.png" alt="">
+                                                    </td>
+                                                    <td>DOT/TRY<br><span>Polkadot</span></td>
+                                                    <td>
+                                                        <div class="percentage">0,03</div>
+                                                        <div class="price">11,2211</div>
+                                                        <div class="currency-direction">
+                                                            <i class="fas fa-arrow-up"></i> 0,0029
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="go-others">
+                                <p>Tüm kripto paralar</p>
+                            </a>
+                            <div id="ad-section-3" class="banner-ad mt-0 d-sm-block d-none">
+                                <a href="javascript:window.location.replace(`http://${location.hostname}`);">
+                                    <img src="media/banner280.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center my-4">
+                            <div class="col-sm-8">
+                                <div id="ad-section-2" class="banner-ad">
+                                    <a href="javascript:window.location.replace(`http://${location.hostname}`);">
+                                        <img src="media/banner90px.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <!--Footer başı-->
+    <footer>
+        <div class="container text-white">
+            <div id="footer-box">
+                <div class="row">
+                    <p class="col-12 fw-light text-center text-lg-start text-white mb-3">Sterlin Investment - Tüm
+                        Hakları
+                        Saklıdır.</p>
+                    <hr class="divider-mobile d-sm-none mx-auto">
+                    <div id="footer-nav" class="col-lg-6 col-xs-12 text-center text-lg-start">
+                        <ul>
+                            <li><a href="">Hakkımızda</a></li>
+                            <li><a href="">Reklam</a></li>
+                            <li><a href="">Yardım</a></li>
+                            <li><a href="">Künye</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="">Api</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Portföy</a></li>
+                            <li><a href="">İletişim</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 text-center text-lg-end">
+                        <div class="download-wrapper">
+                            <a href="#">
+                                <div class="app-download play"></div>
+                            </a>
+                            <a href="#">
+                                <div class="app-download app"></div>
+                            </a>
+                        </div>
+                        <div class="social-icons">
+                            <div class="social-icon">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="disclaimer">Risk Açıklaması: Finansal araçlar ve/veya kripto paralarla işlem
+                            yapmak yüksek seviyede risk içermektedir ve yatırım <br>miktarınızın bir kısmını veya
+                            tamamını kaybetmenize sebep olabilir, bu sebeple tüm yatırımcılar için uygun değildir.
+                            <br>Kripto para fiyatları aşırı derecede hareketlidir ve finansal haberler, politik
+                            olaylar ve düzenleme kurumları gibi <br>konulardan kolaylıkla etkilenir. <br><br>
+                            Burada yer alan yatırım bilgi, yorum ve tavsiyeleri yatırım danışmanlığı kapsamında
+                            değildir. Yatırım danışmanlığı hizmeti; aracı kurumlar, <br>portföy yönetim şirketleri,
+                            mevduat kabul etmeyen bankalar ile müşteri arasında imzalanacak yatırım danışmanlığı
+                            sözleşmesi çerçevesinde <br>sunulmaktadır.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div id="conditions" class="col-12">
+                        <ul>
+                            <li><a href="">Kullanım Koşulları</a></li>
+                            <li><a href="">Gizlilik Politikası</a></li>
+                            <li><a href="">Çerez Ayarları</a></li>
+                            <li><a href="">Risk Uyarısı</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!--Sayfa yüklenirken önemli elementlerin görünür kalması için görünür olarak gelmeyen elementler sona alındı-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="row">
+                    <div class="col-lg-6 bg-primary">
+                        <h4>Bedava <span>Üyelik</span> Oluştur<br>ve;</h4>
+                        <ul>
+                            <li>
+                                <div class="icon-wrap">
+                                    <div class="feature-icon icon-graph"></div>
+                                </div>
+                                <span>Anlık veriler</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrap">
+                                    <div class="feature-icon icon-briefcase"></div>
+                                </div>
+                                <span>Kişisel Portföy Oluşturma</span>
+                            </li>
+                            <li>
+                                <div class="icon-wrap">
+                                    <div class="feature-icon icon-oscar"></div>
+                                </div>
+                                <span>AnalizPRO Akademesi</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="login-buttons" class="col-lg-6 bg-white">
+
+                        <div class="row">
+                            <button class="btn btn-brand btn-facebook mb-2">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook ile Üye Ol</span>
+                            </button>
+                            <button class="btn btn-brand btn-google">
+                                <i class="fab fa-google"></i>
+                                <span>Google ile Üye Ol</span>
+                            </button>
+                            <div class="col-12 text-center">
+                                <p>VEYA</p>
+                            </div>
+                            <button class="page-switchers register btn btn-brand btn-secondary mb-2 text-dark fw-bold"
+                                data-target="register" data-current="login-buttons">
+                                <span>ÜYELİK OLUŞTUR</span>
+                            </button>
+                            <button class="page-switchers login-button btn btn-brand btn-primary" data-target="login"
+                                data-current="login-buttons">
+                                <span>GİRİŞ YAP</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="register" class="col-lg-6 d-none bg-white">
+                        <button class="page-switchers btn btn-back" data-target="login-buttons" data-current="register">
+                            <i class="far fa-long-arrow-alt-left"></i>
+                        </button>
+                        <div class="row">
+                            <form action="/register" method="POST" class="w-100">
+                                <div class="row">
+                                    <div class="col-sm-6 col-12 mb-2 mb-sm-0">
+                                        <div class="input-group ps-0">
+                                            <input type="text" class="form-control" placeholder="Adınız"
+                                                aria-label="Adınız">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-12">
+                                        <div class="input-group pe-0">
+                                            <input type="text" class="form-control" placeholder="Soyadınız"
+                                                aria-label="Soyadınız">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="email" class="form-control" placeholder="Mail adresiniz"
+                                                aria-label="Mail adresiniz">
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="password" class="form-control" placeholder="Şifre"
+                                                aria-label="Şifre">
+                                            <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 mb-4">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="tel" class="form-control" placeholder="Telefon Numarası"
+                                                aria-label="Telefon Numarası" pattern="(05|5)[0-9][0-9][1-9]([0-9]){6}"
+                                                title="Geçerli bir telefon numarası giriniz. Örn: `0555 555 55 55` gibi">
+                                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <p class="termsofservice">Kayıt olarak <a href="">Şartlar ve Koşullar</a> ve <a
+                                                href="">Gizlilik
+                                                Politikasını</a> ilkelerimizi kabul etmiş olursunuz.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-secondary w-100 mb-2">E-posta ile Kayıt
+                                            Ol</button>
+                                        <p class="logintext">Hesabınız var mı? <a class="page-switchers"
+                                                href="javascript:void(0)" data-target="login"
+                                                data-current="register">Giriş
+                                                Yapın</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="login" class="col-lg-6 d-none bg-white">
+                        <button class="page-switchers btn btn-back" data-target="login-buttons" data-current="login">
+                            <i class="far fa-long-arrow-alt-left"></i>
+                        </button>
+                        <div class="row">
+                            <form action="/login" method="POST" class="w-100">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="email" class="form-control" placeholder="Mail adresiniz"
+                                                aria-label="Mail adresiniz">
+                                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12">
+                                        <div class="input-group ps-0">
+                                            <input type="password" class="form-control" placeholder="Şifre"
+                                                aria-label="Şifre">
+                                            <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-secondary w-100 mb-2">Giriş Yap</button>
+                                        <p class="logintext">Hesabınız yok mu? <a class="page-switchers"
+                                                href="javascript:void(0)" data-target="register"
+                                                data-current="login">Hesap
+                                                Oluşturun</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bildirimlerin küçük ekranlarda nasıl görüneceği görüşülecek-->
+    <div class="notif notif-info"></div>
+    <div class="notif notif-price-alarm"></div>
+
+
+
+
+
+
+    <script src="js/static.js" async></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
+</script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js">
+</script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" async>
+    </script>
+
+</body>
+
+</html>
+<!--Footer sonu-->
