@@ -1532,7 +1532,7 @@ hr.divider-mobile {
 
 #register>.row {
     padding-top: 4.5rem;
-    padding-bottom: 2.25rem;
+    padding-bottom: 0 !important;
     padding-right: 2.7rem;
     padding-left: 2.7rem;
 
@@ -3575,4 +3575,20 @@ h2.blog-content-heading {
 .converter-wrapper {
     padding: 6px 0 !important;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.info-content h1,
+.info-content h2,
+.info-content h3,
+.info-content h4 {
+    border-bottom: 5px solid var(--bs-secondary);
+    display: inline-block;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+    border-bottom: 5px solid var(--bs-secondary);
+    display: inline-block;
 }
