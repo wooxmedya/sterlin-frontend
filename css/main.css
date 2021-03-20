@@ -3592,3 +3592,13 @@ h2.blog-content-heading {
     border-bottom: 5px solid var(--bs-secondary);
     display: inline-block;
 }
+
+.table-link {
+    color: unset !important;
+    cursor: pointer;
+    transition: .2s all ease;
+}
+
+.table-link:hover {
+    text-decoration: underline !important;
+}
