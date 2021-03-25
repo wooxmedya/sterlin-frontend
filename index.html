@@ -2365,9 +2365,106 @@
             </div>
         </div>
     </div>
-    <!--Bildirimlerin küçük ekranlarda nasıl görüneceği görüşülecek-->
-    <div class="notif notif-info"></div>
-    <div class="notif notif-price-alarm"></div>
+    <div aria-live="polite" aria-atomic="true" class="toast-wrapper position-fixed bottom-0 end-0">
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div class="row w-100" id="toasts-here">
+                <!-- Buraya toast bildirimler gelecek -->
+                <!--Psd deki tüm bildirimler aşağıdadır-->
+                <!--Ayrıca bildirimleri tetiklemek için javascript yazılmıştır bknz: js/notifier.js-->
+                <!--notifNormal(htmlMessage) içine html mesaj alır. Farklı farklı durumlarda kullanılabilir. notifNormal(exampleHtml) örnek kullanımıdır-->
+                <!--notifAlarm(alarmArray) içine array alır. Örneği .js dosyasında belirtilmiştir. notifAlarm(exampleAlarm) örnek kullanımıdır-->
+                <!--notifUser(commentArray) içine array alır. Örneği .js dosyasında belirtilmiştir. notifUser(exampleUser) örnek kullanımıdır-->
+                <!-- <div class="toast showing mt-3 p-1" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        <div class="content-wrapper">
+                            Ödeme işleminiz başarıyla gerçekleşmiştir. <br>
+                            Sorgu No : 1283185
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="btn btn-success">TAMAM</button>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="toast alarm showing mt-3 p-1" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        <p class="toast-heading">Alarm Bildirimleri</p>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-primary fw-bold"><a href="#">XRP (XRP)</a></span> düştü. <span
+                                    class="text-danger fw-bold">-10,26%
+                                </span>-$0,4686 <br><span class="text-muted">izleme listesi - bir saat önce</span></p>
+                        </div>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-primary fw-bold"><a href="#">XRP (XRP)</a></span> düştü. <span
+                                    class="text-danger fw-bold">-10,26%
+                                </span>-$0,4686 <br><span class="text-muted">izleme listesi - bir saat önce</span></p>
+                        </div>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-primary fw-bold"><a href="#">XRP (XRP)</a></span> düştü. <span
+                                    class="text-danger fw-bold">-10,26%
+                                </span>-$0,4686 <br><span class="text-muted">izleme listesi - bir saat önce</span></p>
+                        </div>
+
+                        <div class="btn-wrapper">
+                            <button class="btn btn-success">TAMAM</button>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="toast notif-user showing mt-3 p-1" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        <p class="toast-heading">Kullanıcı Bildirimleri</p>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-primary fw-bold"><a href="#">Ahmet Kripto</a></span> cevap yazdı. <span
+                                    class="text-success fw-bold"><a href="#">hemen git</a>
+                                </span><br><span class="text-muted">bir saat önce</span></p>
+                        </div>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-primary fw-bold"><a href="#">Ahmet Kripto</a></span> cevap yazdı. <span
+                                    class="text-success fw-bold"><a href="#">hemen git</a>
+                                </span><br><span class="text-muted">bir saat önce</span></p>
+                        </div>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-primary fw-bold"><a href="#">Ahmet Kripto</a></span> cevap yazdı. <span
+                                    class="text-success fw-bold"><a href="#">hemen git</a>
+                                </span><br><span class="text-muted">bir saat önce</span></p>
+                        </div>
+
+
+                        <div class="btn-wrapper">
+                            <button class="btn btn-success">TAMAM</button>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="toast notif-site showing mt-3 p-1" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        <p class="toast-heading">Site Bildirimleri</p>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-primary fw-bold">Alarm sistemi aktif</span> v2 1,77
+                                güncellenmesi.<br>
+                                <span class="text-muted"><a href="#">detayları oku</a></span></p>
+                        </div>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-success fw-bold">Abonelik Ödemesi</span> başarıyla gerçekleşti.<br>
+                                <span class="text-muted"><a href="#">detayları oku</a></span></p>
+                        </div>
+                        <div class="alarm-wrapper">
+                            <p><span class="text-warning fw-bold">Bitcoin Nedir?</span> Dev Rehber paylaşıldı<br>
+                                <span class="text-muted"><a href="#">detayları oku</a></span></p>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="btn btn-success">TAMAM</button>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+        </div>
+    </div>
 
 
 
@@ -2375,6 +2472,7 @@
 
 
     <script src="js/static.js" async></script>
+    <script src="js/notifier.js"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
     </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js">

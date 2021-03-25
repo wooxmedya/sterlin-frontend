@@ -3602,3 +3602,65 @@ h2.blog-content-heading {
 .table-link:hover {
     text-decoration: underline !important;
 }
+
+.toast-wrapper {
+    width: 450px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.toast-container {
+    width: 450px !important;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 45px;
+    padding-right: 45px;
+    pointer-events: none;
+
+}
+
+.toast-container>.row {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.toast {
+    width: 100% !important;
+    position: relative;
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.toast .btn-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.toast .btn {
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.content-wrapper {
+    margin-bottom: 5px;
+}
+
+.toast-heading {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px !important;
+    padding-bottom: 0 !important;
+}
+
+.toast a {
+    color: unset;
+}
+
+.toast a:hover {
+    text-decoration: underline !important;
+}
