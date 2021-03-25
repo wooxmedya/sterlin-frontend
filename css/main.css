@@ -3664,3 +3664,39 @@ h2.blog-content-heading {
 .toast a:hover {
     text-decoration: underline !important;
 }
+
+.table-cart {
+    position: relative;
+}
+
+#sponsored .modal-content {
+    width: 370px !important;
+    height: auto !important;
+}
+
+#sponsored h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+#sponsored p {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #999999;
+}
+
+#sponsored .btn-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#sponsored .btn-success {
+    color: white !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #13d35b !important;
+    border-radius: 2px;
+}

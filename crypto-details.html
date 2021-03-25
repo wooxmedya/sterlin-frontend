@@ -580,7 +580,8 @@
                                     <hr>
                                 </div>
                                 <div class="col-sm-7 col-12 text-start text-sm-end pe-0">
-                                    <button class="btn btn-gradient-primary mx-1">AL/SAT</button>
+                                    <button class="btn btn-gradient-primary mx-1" data-bs-toggle="modal"
+                                        data-bs-target="#sponsored">AL/SAT</button>
                                     <button class="btn btn-head mx-1">
                                         <i class="fas fa-briefcase"></i>Portföye Ekle
                                     </button>
@@ -1627,9 +1628,21 @@
             </div>
         </div>
     </div>
-    <!--Bildirimlerin küçük ekranlarda nasıl görüneceği görüşülecek-->
-    <div class="notif notif-info"></div>
-    <div class="notif notif-price-alarm"></div>
+    <div class="modal fade sponsored-modal" id="sponsored" tabindex="-1" aria-labelledby="sponsored" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h3>Binance ile %20 İndirimli Hemen <br>
+                        Alım Satıma Başla!</h3>
+                    <button class="btn btn-success">AL/SAT</button>
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <p>Yardıma mı ihtiyacınız var? AnalizPRO ekibine katılın!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
